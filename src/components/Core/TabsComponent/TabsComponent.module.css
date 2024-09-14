@@ -1,0 +1,81 @@
+._tabsHeading {
+  display: flex;
+  margin-block-end: 20px;
+  gap: 8px;
+  cursor: pointer;
+  flex-shrink: 0;
+  overflow-x: auto;
+  /* overflow: hidden; */
+  z-index: 4;
+  position: relative;
+}
+
+._tabsHeading p {
+  font-size: 16px;
+  text-wrap: nowrap;
+  font-family: var(--ff-primary-med);
+  padding-inline: 10px;
+}
+
+._tabsHeading > svg {
+  font-size: 24px;
+}
+
+._selectedclass {
+  background-color: var(--secondary-color) !important;
+  border: none !important;
+}
+
+._selectedclass p {
+  color: white !important;
+}
+
+._selectedclass > svg {
+  color: black !important;
+}
+
+._initialTab {
+  flex-basis: 130px;
+  flex-shrink: 0;
+  display: flex;
+  border: 1px solid var(--secondary-color);
+  align-items: center;
+
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  padding-inline: 5px;
+  padding-block: 8px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+._initialTab > svg {
+  font-size: 24px;
+  color: gray;
+}
+
+._initialTab > p {
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+._Recieved > svg {
+  color: gray;
+  font-size: 24px;
+}
+
+._tabsHeading::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+._tabsHeading::-webkit-scrollbar {
+  height: 5px;
+  /* width: 10px; */
+  background-color: #f5f5f5;
+}
+
+._tabsHeading::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+}

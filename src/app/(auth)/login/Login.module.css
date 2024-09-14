@@ -1,0 +1,29 @@
+.authHeading {
+  text-align: center;
+  font-size: clamp(2rem, 6vw + 1rem, 3.1rem);
+}
+
+.formHeading {
+  font-size: clamp(1.75rem, 4vw + 1rem, 2rem);
+  color: var(--black-color) !important;
+}
+
+.formDescription {
+  color: var(--secondary-text-color);
+}
+
+.wrapper {
+  max-width: 600px;
+  width: 100%;
+  margin-inline: auto;
+  border-radius: 1rem;
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width:480px) {
+  .wrapper {
+    padding-block: 1rem;
+  }
+}

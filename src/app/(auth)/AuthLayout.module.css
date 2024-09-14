@@ -1,0 +1,159 @@
+.authlayoutMain {
+  display: grid;
+  grid-template-columns: clamp(600px, 50vw, 800px) auto;
+  max-width: 1280px;
+  margin: auto;
+  min-height: 100vh;
+  gap: 1rem;
+}
+
+.colOne {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: auto 1fr auto;
+  max-height: 700px;
+  height: 100%;
+  margin-inline: auto;
+  width: 100%;
+  align-self: center
+}
+
+.colTwo {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  height: calc(100vh - 1rem);
+  max-height: 800px;
+  position: sticky;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  top: 0.5rem;
+}
+
+.colTwo img {
+  height: 100%;
+}
+
+.header {
+  padding: 1rem;
+  width: 100%;
+  padding-left: 2rem;
+}
+
+.logo {
+  position: relative;
+  height: 85px;
+  max-width: 140px;
+  width: 100%;
+}
+
+.formWrapper {
+  display: grid;
+  align-content: center;
+  max-width: 566px;
+  margin-inline: auto;
+  width: 100%;
+  padding-inline: 1rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 8px;
+}
+
+.footer p,
+.links>* {
+  color: var(--secondary-text-color) !important;
+  margin: 0;
+  font-size: var(--fs-100);
+}
+
+.links {
+  display: flex;
+  gap: 8px;
+}
+
+.formWrapper {
+  position: relative;
+}
+
+
+.authHeading {
+  text-align: center;
+  font-size: clamp(2rem, 6vw + 1rem, 3.1rem);
+}
+
+.formHeading {
+  font-size: clamp(1.75rem, 4vw + 1rem, 2.8rem);
+}
+
+.wrapper {
+  max-width: 768px;
+  margin-inline: auto;
+  box-shadow: 0 0 10px #00000030;
+  border-radius: 1rem;
+  background-color: var(--white-color);
+  padding: 2rem 1rem;
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width:600px) {
+  .authlayoutMain {
+    grid-template-columns: 1fr;
+  }
+
+  .colTwo {
+    display: none;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .wrapper {
+    padding-block: 1rem;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .logo {
+    height: 65px;
+    max-width: 200px;
+  }
+
+  .footer {
+    padding-inline: 0.5rem
+  }
+}
+
+@media screen and (max-width:512px) {
+  .footer {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:325px) {
+  .links {
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+  }
+
+  .seprator {
+    display: none;
+  }
+}
+
+@media screen and (min-height:800px) {
+
+  .colTwo {
+
+    align-self: center;
+  }
+}

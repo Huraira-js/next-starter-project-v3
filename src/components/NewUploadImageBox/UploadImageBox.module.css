@@ -1,0 +1,127 @@
+.box {
+  user-select: none;
+  min-height: 200px;
+  display: flex;
+  gap: 1rem;
+  align-items: start;
+}
+
+.box label {
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-family: var(--ff-primary-reg);
+  font-size: var(--fs-100);
+}
+
+.uploadImageBox {
+  width: 100%;
+  height: 200px;
+  border: 1px solid var(--border-color);
+  position: relative;
+  padding: 0.6rem;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.uploadBox {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.uploadBox button {
+  justify-self: start;
+}
+
+.uploadBox p {
+  color: var(--secondary-text-color);
+}
+
+.icon {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  height: fit-content;
+  width: fit-content;
+}
+
+.uploadBox .uploadIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.uploadBox .uploadIcon svg {
+  color: var(--white-color);
+  font-size: 20px;
+}
+
+/* Image Uploaded */
+.imageUploaded {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  position: relative;
+}
+
+.imageUploaded img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: inherit;
+}
+
+.imageUploaded .editAndDelete {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.imageUploaded .editAndDelete .icon {
+  background-color: var(--main-color);
+  padding: 8px;
+  cursor: pointer;
+}
+
+.imageUploaded .editAndDelete .icon svg {
+  color: var(--white-color);
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  display: inherit;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  background-color: var(--secondary-color);
+  padding: 8px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.closeIcon svg {
+  color: var(--white-color);
+  vertical-align: middle;
+  display: flex;
+}
+
+.label {
+  color: var(--text-color);
+  margin-inline-start: 8px;
+  text-transform: capitalize;
+  font-family: var(--ff-primary-reg);
+  font-size: var(--fs-100);
+  margin-bottom: 4px;
+}
+
+@media screen and (max-width:992px) {
+  .box {
+    flex-direction: column;
+  }
+}

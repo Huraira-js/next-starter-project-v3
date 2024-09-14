@@ -1,0 +1,56 @@
+.labelText {
+  color: var(--dashboard-main-color);
+  text-transform: capitalize;
+  font-family: var(--ff-primary-reg);
+  font-size: var(--fs-100);
+  margin-bottom: 4px;
+  margin-inline-start: 8px;
+  line-height: 1.1;
+}
+
+.inputDiv {
+  position: relative;
+  display: flex;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+}
+
+.comboboxInput {
+  font-family: var(--ff-primary-reg);
+  font-size: 16px;
+  color: var(--text-color-black);
+  letter-spacing: 1.4px;
+  border-radius: inherit;
+  background-color: inherit;
+  padding: 10px;
+  width: 100%;
+}
+
+.inputDiv input {
+  background-color: var(--white-color);
+}
+
+.leftIcon {
+  position: absolute;
+  left: 20px;
+  top: 60%;
+  bottom: 45%;
+  transform: translateY(-50%);
+  height: max-content;
+}
+
+.inputDiv input::placeholder {
+  color: var(--placeholder-color);
+  font-family: var(--ff-primary-reg);
+  font-size: var(--fs-100);
+  text-transform: capitalize;
+}
+
+.comboBoxList {
+  position: absolute;
+  background: #fff;
+  top: 100%;
+  z-index: 9999;
+  border: 1px solid #000;
+}

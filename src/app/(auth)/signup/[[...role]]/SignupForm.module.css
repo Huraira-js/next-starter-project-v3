@@ -1,0 +1,47 @@
+.listWrapper {}
+
+.spacingWrapper {
+	margin-bottom: 1rem;
+}
+
+.actionWrapper {
+	display: grid;
+	gap: 1rem;
+}
+
+.listWrapper p {
+	margin-bottom: 0;
+}
+
+.list {
+	padding-inline-start: 20px;
+}
+
+.list,
+.list li {
+	list-style-type: disc;
+}
+
+.agreeWrapper {
+	display: flex;
+	align-items: start;
+	gap: 8px;
+	padding-bottom: 16px;
+}
+
+.agreeWrapper p {
+	margin: 0;
+}
+
+.agreeWrapper>*:first-child {
+	margin-block: 3px 0 !important;
+}
+
+.login {
+	color: var(--secondary-text-color);
+	text-align: center;
+}
+
+.login a {
+	font-family: var(--ff-primary-bold);
+}

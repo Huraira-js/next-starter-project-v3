@@ -1,0 +1,48 @@
+/* .phoneNumberDiv > div:first-of-type {
+  background-color: var(--dashboard-main-color);
+  border-radius: 5px;
+  border: 1px solid var(--dashboard-main-color);
+  padding: 11px;
+} */
+.label {
+  color: var(--primary-text-color);
+  text-transform: capitalize;
+  font-family: var(--ff-primary-reg);
+  font-size: var(--fs-base);
+  margin-bottom: 4px;
+  margin-inline-start: 8px;
+}
+
+.phoneNumberDiv input {
+  background-color: var(--dashboard-main-color);
+}
+
+.phoneNumberInput>div {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  padding: 11px;
+  margin-right: 0;
+  border-right: 1px solid #c1c0c0;
+
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.phoneNumberInput input {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  padding: 11px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.phoneNumberInput input::placeholder {
+  font-family: var(--ff-primary-reg)
+}
+
+.error {
+  border: 1px solid red !important;
+  border-radius: 5px !important;
+}

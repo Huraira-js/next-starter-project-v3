@@ -1,0 +1,138 @@
+.MuiPagination-root {
+  --border-radius: 50%;
+  --button-spacing: 4px;
+  --button-border: var(--border-color);
+  --button-bg: #e4e4e4;
+  --button-color: #a8a8a8;
+  --button-active-bg: var(--secondary-color);
+  --button-chevron-bg: var(--secondary-color);
+}
+
+.MuiPagination-ul li .Mui-selected {
+  background-color: var(--main-color);
+  color: var(--white-color) !important;
+  font-size: var(--fs-100) !important;
+  width: 33px !important;
+  height: 33px !important;
+  font-family: var(--ff-primary-med) !important;
+  border: 0.3px solid var(--main-color);
+  padding: 1rem;
+}
+
+.MuiPagination-ul li button {
+  background-color: var(--button-bg);
+  color: var(--button-color) !important;
+  font-size: 12px !important;
+  width: 33px !important;
+  height: 33px !important;
+  font-family: var(--ff-primary-med) !important;
+  border: 0.3px solid #dbdbdb;
+  padding: 1rem;
+  margin-inline: var(--button-spacing, 0px);
+  border-radius: var(--border-radius, 0px);
+}
+
+.MuiPagination-ul li button:hover {
+  background-color: var(--button-bg);
+}
+
+.MuiPagination-ul li .Mui-selected:hover {
+  background-color: var(--button-active-bg);
+}
+
+.MuiPagination-ul li:first-child button.Mui-disabled,
+.MuiPagination-ul li:last-child button.Mui-disabled {
+  background-color: var(--button-bg);
+}
+
+.MuiPagination-ul li:first-child button:not(.Mui-disabled),
+.MuiPagination-ul li:last-child button:not(.Mui-disabled) {
+  background-color: var(--button-chevron-bg);
+  border-color: var(--button-chevron-bg);
+  color: var(--white-color) !important;
+}
+
+.MuiPagination-ul li:first-child button {
+  background-color: var(--button-bg);
+  color: var(--secondary-color) !important;
+  font-size: 12px !important;
+  width: 33px !important;
+  height: 33px !important;
+  font-family: var(--ff-primary-med) !important;
+  border: 0.3px solid #dbdbdb;
+  position: static;
+  padding: 1rem;
+  margin-right: 10px;
+  border-radius: var(--border-radius, 8px) !important;
+}
+
+.MuiPagination-ul li:last-child button {
+  background-color: var(--white-color);
+  color: var(--secondary-color) !important;
+  font-size: 12px !important;
+  width: 33px !important;
+  height: 33px !important;
+  font-family: var(--ff-primary-med) !important;
+  border: 0.3px solid #dbdbdb;
+  position: static;
+  padding: 1rem;
+  margin-left: 10px;
+  border-radius: var(--border-radius, 8px) !important;
+}
+
+.MuiPagination-ul li:nth-child(2) button {
+  margin-inline: 0px;
+  border-top-left-radius: var(--border-radius, 8px);
+  border-bottom-left-radius: var(--border-radius, 8px);
+}
+
+.MuiPagination-ul li:nth-last-child(2) button {
+  margin-inline: 0px;
+  border-top-right-radius: var(--border-radius, 8px);
+  border-bottom-right-radius: var(--border-radius, 8px);
+}
+
+/* .MuiPagination-ul li button {
+  color: var(--dashboard-text-color) !important;
+  font-size: 12px !important;
+  font-family: var(--ff-primary-med);
+}
+.MuiPagination-ul li:first-child {
+  margin-inline-end: auto;
+}
+.MuiPagination-ul li:last-child {
+  margin-inline-start: auto;
+}
+.MuiPagination-ul li:first-child button {
+  border: 1px solid var(--secondary-color);
+  padding: 1rem;
+  background-color: transparent;
+  color: var(--secondary-color) !important;
+}
+.MuiPagination-ul li:last-child button {
+  border: 1px solid var(--secondary-color);
+  padding: 1rem;
+  background-color: var(--secondary-color);
+  color: var(--white-color) !important;
+}
+@media screen and (min-width: 520px) {
+  .MuiPagination-ul li:first-child button:after {
+    content: "Previous";
+    margin-inline-start: 14px;
+    color: inherit;
+  }
+  .MuiPagination-ul li:last-child button:before {
+    content: "Next";
+    margin-inline-end: 14px;
+    color: inherit;
+  }
+}
+@media screen and (max-width: 520px) {
+  .MuiPagination-ul li:last-child button,
+  .MuiPagination-ul li:first-child button {
+    padding: 0.3rem;
+  }
+  .MuiPagination-ul li .Mui-selected {
+    padding: 0.4rem;
+  }
+} */

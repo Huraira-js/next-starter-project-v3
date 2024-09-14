@@ -1,0 +1,34 @@
+.authHeading {
+  text-align: center;
+  font-size: clamp(32px, 4vw, 50px);
+}
+
+.rememberMeWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.consentWrapper {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+}
+
+.consentWrapper p {
+  margin-bottom: 0;
+  color: var(--secondary-text-color);
+}
+
+.signup {
+  color: var(--secondary-text-color);
+}
+
+.textCenter {
+  text-align: center
+}
+
+.textCenter a {
+  font-family: var(--ff-primary-bold);
+}

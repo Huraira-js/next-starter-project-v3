@@ -1,0 +1,141 @@
+.main .__header {
+  display: grid;
+  grid-template-columns: 1fr repeat(100, auto);
+  padding: 0.5rem;
+  align-items: center;
+  overflow-y: auto;
+  position: relative;
+  z-index: 3;
+}
+
+.__header {
+  margin-block: 0 10px;
+  border-radius: 10px;
+}
+
+.main .__header::-webkit-scrollbar {
+  display: none;
+}
+
+.__header>* {
+  white-space: nowrap;
+}
+
+.__header>button:not(:first-of-type) {
+  margin-left: 15px;
+}
+
+.__header:has(.filterDropdown) {
+  margin-bottom: -285px;
+  padding-bottom: 300px;
+}
+
+.main {
+  border-radius: 8px;
+  background-color: #ffff;
+}
+
+.main .__header p {
+  margin-bottom: 0;
+  margin-inline-end: auto;
+}
+
+.main .__header :global(.filter__dropdown-indicator) {
+  padding: 0;
+}
+
+.main .__header :global(.filter__control) {
+  padding-block: 2px;
+}
+
+.table {
+  width: 100%;
+  min-width: 1200px;
+}
+
+.tableWrapper {
+  height: 700px;
+  overflow-y: auto;
+}
+
+.tableWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.tableHeader {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  /* border-bottom: 1px solid #e5e6e9; */
+  border-radius: 20px;
+}
+
+.buttonClass {
+  border: none !important;
+  background-color: var(--secondary-color) !important;
+  color: var(--white-color) !important;
+  padding-block: 10px !important;
+  margin-inline-start: 10px !important;
+  align-self: stretch !important;
+  border-radius: 10px !important;
+}
+
+.tableHeader {}
+
+.tableRow {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+}
+
+.tableRow::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 0.5rem;
+  background-color: var(--background);
+  z-index: -1;
+}
+
+:not(.tableHeader) .tableRow:not(:last-child) {
+  /* border-bottom: 1px solid #e5e6e9; */
+}
+
+.tableHead,
+.tableData {
+  padding: 0.8rem 0.8rem;
+  font-size: var(--fs-base);
+}
+
+.tableHead {
+  font-family: var(--ff-primary-med);
+  font-weight: 600;
+  color: black;
+  background-color: var(--input-background-color);
+}
+
+.tableHead:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.tableHead:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.tableData {
+  font-family: var(--ff-primary-reg);
+  color: var(--primary-color);
+}
+
+.tableData p {
+  color: var(--primary-color);
+}
+
+.Pagination {
+  padding: 1rem;
+  display: flex;
+  justify-content: start;
+}

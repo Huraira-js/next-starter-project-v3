@@ -1,0 +1,204 @@
+.headerMainDiv {
+  padding-block: 1rem;
+}
+
+.header {
+  min-height: 36px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  position: relative;
+  /* padding: 10px 15px; */
+  padding: 10px 1px;
+  max-width: 80%;
+  margin: 0 auto;
+  gap: 0.5rem;
+  padding: 16px;
+  background-color: var(--white-color);
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgb(30 30 64/0.4)
+}
+
+.languageDropDownDiv {
+  display: flex;
+  align-items: center;
+  margin-inline-start: auto;
+}
+
+.imageContainer {
+  position: relative;
+  height: 46px;
+  width: 184px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-inline-end: auto;
+}
+
+.imageContainer+div {
+  justify-self: end
+}
+
+.imageContainer+div>div {
+  border-bottom: 1px solid var(--border-color) !important
+}
+
+.logoText {
+  color: var(--white-color);
+  font-size: 22px;
+  font-family: var(--ff-primary-bold);
+  margin-bottom: 0;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.hamburger {
+  font-size: 25px;
+}
+
+.drawer {
+  margin: 1rem;
+  border-radius: 1rem;
+  overflow: clip;
+  height: calc(100vh - 2rem) !important;
+}
+
+.drawerContainer {
+  background: transparent linear-gradient(#ffffff 0%, #fef7f1 100%, #ffffff 100%);
+  height: 100vh;
+  width: 100%;
+}
+
+.drawerLogo {
+  width: 130px;
+  height: auto;
+}
+
+/* User Section */
+.drawerUserSection {
+  height: 175px;
+  width: 100%;
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 1rem 40px 1rem;
+  background-color: rgb(30 30 64/0.2);
+}
+
+.drawerUserSection .drawerUserImage {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drawerUserSection .drawerUserName {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+
+.drawerUserSection .drawerUserEmail {
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Listing Section */
+.drawerList {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.listItem {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+}
+
+.listItem .listItemText {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #717171;
+  font-family: var(--ff-primary-reg);
+}
+
+.listItem svg {
+  fill: #717171;
+  font-size: 15px;
+}
+
+.activeItem {
+  background: var(--active-item-bg);
+}
+
+.activeItem .listItemText {
+  color: var(--secondary-color);
+}
+
+.activeItem svg {
+  fill: var(--secondary-color);
+}
+
+.cartNumbers {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  border-radius: 50%;
+  padding: 6px;
+  margin-left: 8px;
+}
+
+.subMenu {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  padding: 5px 10px 5px 10px;
+  gap: 8px;
+}
+
+.subMenu>a {
+  cursor: pointer;
+  margin-left: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #717171 !important;
+  font-family: var(--ff-primary-reg);
+}
+
+.icon {
+  margin-inline-start: 8px;
+  display: inline-block;
+}
+
+@media (max-width: 1440px) {
+  .header {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    grid-template-columns: 1fr auto;
+    padding-bottom: 1rem;
+  }
+}

@@ -1,0 +1,87 @@
+.btn {
+  outline: none;
+  border: none;
+  font-family: var(--ff-primary-reg);
+  padding: 8px 16px;
+  border-radius: 0.5rem;
+  font-size: var(--fs-btn);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  inset: var(--inset);
+  background-color: var(--hover-bg);
+  z-index: -1;
+  border-radius: calc(1rem - 1px);
+  clip-path: circle(0px at 50% 50%);
+  transition: clip-path 0.2s ease-in;
+}
+
+.btn.hover:hover {
+  color: var(--hover-color, --bg) !important;
+}
+
+.btn.hover:hover::after {
+  clip-path: circle(400px at 50% 50%);
+}
+
+.isSimpleHover {
+  transition: transform 0.2s ease-in;
+}
+
+.isSimpleHover:hover {
+  transform: scale(1.05)
+}
+
+.btn[data-variant="primary"] {
+  --bg: var(--main-color);
+  --hover-bg: var(--white-color);
+  --inset: 1px;
+  background-color: var(--bg);
+  color: var(--white-color);
+}
+
+.btn[data-variant="secondary"] {
+  --bg: var(--white-color);
+  --hover-bg: var(--primary-color);
+  --hover-color: var(--white-color);
+  --inset: 1px;
+  background-color: var(--white-color);
+  color: var(--primary-color);
+}
+
+.btn[data-variant="tertiary"] {
+  --bg: var(--secondary-color);
+  --hover-bg: var(--white-color);
+  --inset: 1px;
+  background-color: var(--bg);
+  color: var(--white-color);
+}
+
+.btn[data-variant="bordered"] {
+  --bg: transparent;
+  --hover-bg: var(--primary-color);
+  --hover-color: var(--white-color);
+  --inset: 0px;
+  background-color: var(--bg);
+  color: var(--secondary-text-color);
+  border: 1px solid var(--secondary-text-color);
+}
+
+.btn[data-variant="bordered-white"] {
+  --bg: transparent;
+  --hover-bg: var(--white-color);
+  --hover-color: var(--primary-color);
+  --inset: 0px;
+  background-color: var(--bg);
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+}

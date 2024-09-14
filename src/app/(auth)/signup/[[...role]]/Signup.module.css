@@ -1,0 +1,42 @@
+.authHeading {
+	text-align: center;
+	font-size: clamp(2rem, 6vw + 1rem, 3.1rem);
+	font-weight: 400;
+}
+
+.formHeading {
+	font-size: clamp(1.75rem, 4vw + 1rem, 2rem);
+	font-weight: 400;
+	color: var(--black-color) !important;
+}
+
+.wrapper {
+	max-width: 600px;
+	width: 100%;
+	margin-inline: auto;
+	border-radius: 1rem;
+	display: grid;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+.links {
+	display: flex;
+	gap: 1rem;
+}
+
+.links a {
+	color: #C7C7C7 !important;
+	font-size: var(--fs-400);
+}
+
+.links a.active {
+	color: var(--primary-color) !important;
+	text-decoration: underline !important;
+}
+
+@media screen and (max-width:480px) {
+	.wrapper {
+		padding-block: 1rem;
+	}
+}
